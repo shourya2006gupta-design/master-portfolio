@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Super Dev Portfolio World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Dev Portfolio World</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -17,116 +18,116 @@
 
     <!-- ===== SECTION 1: START SCREEN ===== -->
     <!-- HINT: Opening section tag -->
-    <_________ id="start">
+    <section id="start">
 
         <!-- HINT: Main heading (largest text) -->
-        <__> SUPER DEV WORLD </__>
+        <h1> SUPER DEV WORLD </h1>
 
         <!-- HINT: Paragraph for instructions -->
-        <__>
+        <p>
             PLAY MY INTERACTIVE PORTFOLIO GAME<br><br>
             COLLECT ALL COINS 🪙<br>
             AVOID ENEMIES 👾<br><br>
             MOVE → ←<br>
             JUMP SPACE
-        </__>
+        </p>
 
         <!-- HINT: Button to start game -->
-        <__________ onclick="startGame()" class="btn-start">
+        <button onclick="startGame()" class="btn-start">
             START GAME
-        </__________>
+        </button>
 
-    </_________>
+    </section>
 
-<!-- TASK 2: Add The GAME WORLD -->
+    <!-- TASK 2: Add The GAME WORLD -->
 
-<!-- ===== SECTION 2: GAME WORLD ===== -->
-<_________ id="world" class="game-world">
+    <!-- ===== SECTION 2: GAME WORLD ===== -->
+    <section id="world" class="game-world">
 
-    <!-- Sky Element -->
-    <div class="sun"></div>
+        <!-- Sky Element -->
+        <div class="sun"></div>
 
-    <!-- Clouds (you'll add 3) -->
-    <div class="_________ _________1"></div>
-    <div class="_________ _________2"></div>
-    <div class="_________ _________3"></div>
+        <!-- Clouds (you'll add 3) -->
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
 
-    <!-- Ground -->
-    <div class="ground"></div>
+        <!-- Ground -->
+        <div class="ground"></div>
 
-    <!-- PLAYER CHARACTER - Fill the gaps -->
-    <div id="________" class="player">
-        <div class="cap"></div>
-        <div class="face"></div>
-        <div class="body"></div>
-        <div class="legs"></div>
+        <!-- PLAYER CHARACTER - Fill the gaps -->
+        <div id="player" class="player">
+            <div class="cap"></div>
+            <div class="face"></div>
+            <div class="body"></div>
+            <div class="legs"></div>
+        </div>
+
+    </section>
+
+    <!-- TASK 3: Add INFO PANELS -->
+
+    <!-- ===== ABOUT ME PANEL ===== -->
+    <div class="panel" style="left:700px; bottom:180px;">
+        <h2>ABOUT ME</h2>
+        <p>
+            CREATIVE FRONTEND DEVELOPER<br><br>
+            I BUILD 3D WEBSITES,<br>
+            GAME UI,<br>
+            INTERACTIVE EXPERIENCES
+        </p>
     </div>
 
-</_________>
-
-<!-- TASK 3: Add INFO PANELS -->
-
-<!-- ===== ABOUT ME PANEL ===== -->
-<__________ class="panel" style="left:700px; bottom:180px;">
-    <h2>ABOUT ME</h2>
-    <p>
-        CREATIVE FRONTEND DEVELOPER<br><br>
-        I BUILD 3D WEBSITES,<br>
-        GAME UI,<br>
-        INTERACTIVE EXPERIENCES
-    </p>
-</__________>
-
-<!-- ===== SKILLS PANEL ===== -->
-<__________ class="panel" style="left:2300px; bottom:180px;">
-    <h2>SKILLS</h2>
-    <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JAVASCRIPT</div>
-        <div class="skill">REACT</div>
+    <!-- ===== SKILLS PANEL ===== -->
+    <div class="panel" style="left:2300px; bottom:180px;">
+        <h2>SKILLS</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JAVASCRIPT</div>
+            <div class="skill">REACT</div>
+        </div>
     </div>
-</__________>
 
-<!-- ===== PROJECTS PANEL ===== -->
-<__________ class="panel" style="left:4700px; bottom:180px;">
-    <h2>PROJECTS</h2>
-    <div class="project">3D GAME WEBSITE</div>
-    <div class="project">CYBERPUNK UI</div>
-    <div class="project">INTERACTIVE DASHBOARD</div>
-</__________>
+    <!-- ===== PROJECTS PANEL ===== -->
+    <div class="panel" style="left:4700px; bottom:180px;">
+        <h2>PROJECTS</h2>
+        <div class="project">3D GAME WEBSITE</div>
+        <div class="project">CYBERPUNK UI</div>
+        <div class="project">INTERACTIVE DASHBOARD</div>
+    </div>
 
-<!-- ===== CONTACT PANEL ===== -->
-<__________ class="panel" style="left:7000px; bottom:180px;">
-    <h2>CONTACT</h2>
-    <p>
-        EMAIL: hello@developer.com<br><br>
-        GITHUB: github.com/dev<br><br>
-        INSTAGRAM: @developer
-    </p>
-</__________>
+    <!-- ===== CONTACT PANEL ===== -->
+    <div class="panel" style="left:7000px; bottom:180px;">
+        <h2>CONTACT</h2>
+        <p>
+            EMAIL: hello@developer.com<br><br>
+            GITHUB: github.com/dev<br><br>
+            INSTAGRAM: @developer
+        </p>
+    </div>
 
-<!-- TASK 4: Add GAME OBJECTS -->
- <!-- ===== COINS TO COLLECT ===== -->
-        <div class="________" style="left:1550px; bottom:420px;"></div>
-        <div class="________" style="left:3450px; bottom:470px;"></div>
-        <div class="________" style="left:5650px; bottom:430px;"></div>
-        <div class="________" style="left:6400px; bottom:250px;"></div>
-        <div class="________" style="left:7800px; bottom:260px;"></div>
+    <!-- TASK 4: Add GAME OBJECTS -->
+    <!-- ===== COINS TO COLLECT ===== -->
+    <div class="coin" style="left:1550px; bottom:420px;"></div>
+    <div class="coin" style="left:3450px; bottom:470px;"></div>
+    <div class="coin" style="left:5650px; bottom:430px;"></div>
+    <div class="coin" style="left:6400px; bottom:250px;"></div>
+    <div class="coin" style="left:7800px; bottom:260px;"></div>
 
-        <!-- ===== ENEMIES TO AVOID ===== -->
-        <div class="________" style="left:1900px; bottom:120px;"></div>
-        <div class="________" style="left:4200px; bottom:120px;"></div>
-        <div class="________" style="left:6000px; bottom:120px;"></div>
-        <div class="________" style="left:7600px; bottom:120px;"></div>
+    <!-- ===== ENEMIES TO AVOID ===== -->
+    <div class="enemy" style="left:1900px; bottom:120px;"></div>
+    <div class="enemy" style="left:4200px; bottom:120px;"></div>
+    <div class="enemy" style="left:6000px; bottom:120px;"></div>
+    <div class="enemy" style="left:7600px; bottom:120px;"></div>
 
-<!-- TASK 5: Add UI CONTAINER -->
+    <!-- TASK 5: Add UI CONTAINER -->
 
-<!-- ===== FLOATING UI STATS ===== -->
-    <_________ id="ui" class="ui-container">
+    <!-- ===== FLOATING UI STATS ===== -->
+    <div id="ui" class="ui-container">
         <span id="coins">COINS: 0</span>
         <span id="world">WORLD: DEV-1</span>
-    </_________>
+    </div>
 
     <!-- ===== CONTACT POPUP (Hidden) ===== -->
     <div id="contactPopup" class="popup-overlay">
@@ -145,4 +146,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
