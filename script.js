@@ -208,7 +208,7 @@ function gameLoop() {
                     x < cx + 61 &&
                     player.offsetTop < cy + 60 &&
                     player.offsetTop + 158 > cy
-                ) {
+                ) {    document.getElementById('enemybox').classList.add('paused');
 
                     if (coin.id === 'htmlcoin' && quizgameactive === false) {
                         rleg.classList.remove('walk1');
@@ -288,7 +288,6 @@ function gameLoop() {
 gameLoop();
 
 function loadQuestion() {
-    document.getElementById('rungame').classList.add('paused');
     // quizgameactive = true;
     moveLeft = false;
     moveRight = false;
@@ -306,7 +305,6 @@ function loadQuestion() {
     });
 }
 function checkAnswer(answer) {
-    document.getElementById('rungame').classList.add('paused');
     // quizgameactive = true;
     if (answer === quiz[currentQuestion].correct) {
         correction.innerText = "✅ Correct!";
@@ -332,7 +330,7 @@ function checkAnswer(answer) {
 }
 
 function showResult() {
-    document.getElementById('rungame').classList.remove('paused');
+    document.getElementById('enemybox').classList.remove('paused');
     quizgameactive = false;
     question.innerHTML = "";
     answers.innerHTML = "";
